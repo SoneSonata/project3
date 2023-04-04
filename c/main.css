@@ -1,0 +1,7 @@
+#contain {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+    margin: auto;
+}

@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 3: Dynamic Media Player</title>
+    <script src="j/video_helpers.js" defer></script>
+    <script type="module" src="j/main.js"></script>
+    <link rel="stylesheet" href="c/main.css">
 </head>
 <body>
+    <h1>Is it a Subway or a Subway?</h1>
+
+    <main id="contain">
+        <section id="col1">
+            <img class="logo" src="i/btslogob.jpg" alt="">
+            <audio id="pod" controls>
+                <source src="a/BTSWTW156clip.mp3">
+
+                <h2>Beach too Sandy, Water too Wet: Episode 156</h2>
+            </audio>
+
+            <div id="controls">
+                <form id="audio-form">
+                    <fieldset>
+                        <legend>Playback Controls</legend>
+                        <input type="button"
+                        id="play_button" 
+                        onclick="playVideo(pod)" 
+                        value="Play"/>
+                        <input type="button" id="pause_button" onclick="pauseVideo(pod)" value="Pause" />
+						<input type="button" id="mute" onclick="muteVid(pod)" value="Mute" />
+						<input type="button" id="unmute" onclick="unmuteVid(pod)" value="Unmute" />
+
+                        <fieldset>
+                            <legend>Audio Navigation</legend>
+                            <input type="button" id="rewind" onclick="seekVideo(pod, 0)" value="Beginning" />
+                            <input type="button" id="end" onclick="seekVideo(pod, 304)" value="End" />
+                            <input type="button" id="rev1" onclick="seekVideo(pod,78)" value="First Review"/>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
