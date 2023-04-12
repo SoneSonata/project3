@@ -1,3 +1,7 @@
+body {
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
 #contain {
     display: grid;
     grid-gap: 2rem;
@@ -5,3 +9,80 @@
     position: relative;
     margin: auto;
 }
+
+#title {
+    display: inline-block;
+}
+
+#col1 {
+    width: 100%;
+}
+
+
+iframe {
+	width:100%;
+	height:100%;
+}
+
+.hide {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.pop {
+    position:absolute;
+	top:0px;
+	left: 0px;
+    background: white;
+    border: solid 2pt red;
+    padding: 10px;
+}
+
+.roll {
+    animation: roll 1s linear forwards;
+}
+
+.shine {
+    animation: shine 2s linear forwards;
+}
+
+@keyframes shine{
+    0% {
+        color:black;
+    }
+
+    25% {
+        color: gray;
+    }
+
+    50% {
+        color: white;
+    }
+
+    75% {
+        color: gray;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes roll {
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

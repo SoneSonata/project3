@@ -10,16 +10,15 @@
     <link rel="stylesheet" href="c/main.css">
 </head>
 <body>
-    <h1>Is it a Subway or a Subway?</h1>
+    <h1 id="title">Is it a Subway or a Subway?</h1>
 
     <main id="contain">
         <section id="col1">
-            <img class="logo" src="i/btslogob.jpg" alt="">
-            <audio id="pod" controls>
-                <source src="a/BTSWTW156clip.mp3">
+            <video id="pod" controls>
+                <source src="v/BTS156clip.mp4">
 
                 <h2>Beach too Sandy, Water too Wet: Episode 156</h2>
-            </audio>
+            </video>
 
             <div id="controls">
                 <form id="audio-form">
@@ -28,8 +27,8 @@
                         <input type="button"
                         id="play_button" 
                         onclick="playVideo(pod)" 
-                        value="Play"/>
-                        <input type="button" id="pause_button" onclick="pauseVideo(pod)" value="Pause" />
+                        value=&#9654;>
+                        <input type="button" id="pause_button" onclick="pauseVideo(pod)" value = &#x23F8;>
 						<input type="button" id="mute" onclick="muteVid(pod)" value="Mute" />
 						<input type="button" id="unmute" onclick="unmuteVid(pod)" value="Unmute" />
 
@@ -37,10 +36,19 @@
                             <legend>Audio Navigation</legend>
                             <input type="button" id="rewind" onclick="seekVideo(pod, 0)" value="Beginning" />
                             <input type="button" id="end" onclick="seekVideo(pod, 304)" value="End" />
-                            <input type="button" id="rev1" onclick="seekVideo(pod,78)" value="First Review"/>
-                    </fieldset>
+                            <input type="button" id="rev1" value="First Review"/>
+                            <input type="button" id="rev2" value="Second Review">
+                    </fieldset> 
                 </form>
             </div>
+
+            <div class="pop hide">
+                <p>Test</p>
+            </div>
+        </section>
+
+        <section class="col2">
+            <iframe id="wind" src="https://www.beachtoosandy.com/"></iframe> 
         </section>
     </main>
     
