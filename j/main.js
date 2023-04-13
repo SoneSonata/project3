@@ -28,6 +28,7 @@ function init(){
         {seconds:206, callback: func5},
         {seconds:233, callback: func12},
         {seconds:250, callback: func13},
+        {seconds:252, callback: func13r},
         {seconds:275, callback: func14},
         {seconds:303, callback: func7},
         {seconds:305, callback: func15},
@@ -119,7 +120,10 @@ function func13 () {
     setTimeout(() => {
         document.querySelector(".pop").classList.toggle("hide");
     }, 2000);
-    window.open("https://www.google.com");
+}
+
+function func13r () {
+    window.open("https://www.google.com/search?q=when+does+the+next+train+leave&rlz=1C1UEAD_enUS989US990&oq=when+does+&aqs=chrome.0.69i59j69i57j0i131i433i650j0i457i512j0i402i512j0i131i433i650j0i512j0i433i512j0i512l2.2246j0j7&sourceid=chrome&ie=UTF-8");
 }
 
 function func14 () {
