@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", init);
 var myCues;
 function init(){ 
     const pod = document.querySelector("#pod");
+    const controls = document.querySelector('#controls');
+    controls.classList.remove("hide");
 
     myCues = [
         { seconds: 5, callback: func1 },
@@ -55,13 +57,13 @@ function func1() {
 function roll() {
     const title = document.querySelector("#title");
     title.classList.add("roll");
-    document.querySelector("#wind").src = "i/bread.jpg";
+    document.querySelector("#wind").src = "imagepage.html?i=bread.jpg";
 }
 
 function func2 () {
     const title = document.querySelector("#title");
     title.classList.add("shine");
-    document.querySelector("#wind").src = "i/Sos1.png";
+    document.querySelector("#wind").src = "imagepage.html?i=Sos1.png";
     
 }
 
@@ -75,7 +77,7 @@ function func3 () {
 }
 
 function func4 () {
-    document.querySelector("#wind").src = "i/line.jpg";
+    document.querySelector("#wind").src = "imagepage.html?i=line.jpg";
 }
 
 function func5 () {
@@ -87,15 +89,15 @@ function func6 () {
 }
 
 function func7 () {
-    document.querySelector("#wind").src = "i/subguess.jpg";
+    document.querySelector("#wind").src = "imagepage.html?i=subguess.jpg";
 }
 
 function func8 () {
-    document.querySelector("#wind").src = "i/notsub.jpg";
+    document.querySelector("#wind").src = "imagepage.html?i=notsub.jpg";
 }
 
 function func9 () {
-    document.querySelector("#wind").src = "i/lax.jpg";
+    document.querySelector("#wind").src = "imagepage.html?i=lax.jpg";
 }
 
 function func10 () {
@@ -103,11 +105,11 @@ function func10 () {
 }
 
 function func11 () {
-    document.querySelector("#wind").src = "i/jj.jpg";
+    document.querySelector("#wind").src = "imagepage.html?i=jj.jpg";
 }
 
 function func12 () {
-    document.querySelector("#wind").src = "i/subsub.jpg";
+    document.querySelector("#wind").src = "imagepage.html?i=subsub.jpg";
 }
 
 function func13 () {
@@ -117,13 +119,13 @@ function func13 () {
     setTimeout(() => {
         document.querySelector(".pop").classList.toggle("hide");
     }, 2000);
-    document.querySelector("#wind").src = "https://www.google.com/";
+    window.open("https://www.google.com");
 }
 
 function func14 () {
-    document.querySelector("#wind").src = "i/birth.jpg";
+    document.querySelector("#wind").src = "imagepage.html?i=birth.jpg";
 }
 
 function func15 () {
-    document.querySelector("#wind").src = "i/yessub.jpg";
+    document.querySelector("#wind").src = "imagepage.html?i=yessub.jpg";
 }

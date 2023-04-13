@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="c/sub.css">
+    
+</head>
+<body>
+    <img class="iimage" src="i/Sos1.png" alt="">
+
+    <script>
+        const pic = window.location.search;
+        const myarray = pic.split("=")[1];
+            document.querySelector(".iimage").src = `i/${myarray}`;
+    </script>
+</body>
+</html>
