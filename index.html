@@ -25,19 +25,16 @@
                 <form id="audio-form">
                     <fieldset>
                         <legend>Playback Controls</legend>
-                        <input type="button"
-                        id="play_button" 
-                        onclick="playVideo(pod)" 
-                        value=&#9654;>
-                        <input type="button" id="pause_button" onclick="pauseVideo(pod)" value = &#x23F8;>
-						<input type="button" id="mute" onclick="muteVid(pod)" value="Mute">
-						<input type="button" id="unmute" onclick="unmuteVid(pod)" value="Unmute">
+                        <input type="button" id="play_button" value=&#9654;>
+                        <input type="button" id="pause_button" value = &#x23F8;>
+						<input type="button" id="mute" value="Mute">
+						<input type="button" id="unmute" value="Unmute">
                     </fieldset> 
 
                     <fieldset>
                         <legend>Audio Navigation</legend>
-                        <input type="button" id="rewind" onclick="seekVideo(pod, 0)" value="Beginning">
-                        <input type="button" id="end" onclick="seekVideo(pod, 304)" value="End">
+                        <input type="button" id="begin" value="Beginning">
+                        <input type="button" id="end" value="End">
                         <input type="button" id="rev1" value="First Review">
                         <input type="button" id="rev2" value="Second Review">
                     </fieldset>

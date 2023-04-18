@@ -36,6 +36,8 @@ function init(){
 
     cueTimer.setup('pod', myCues);
 
+    pod.volume = 0.5;
+
     document.getElementById("rev1").addEventListener("click", (e) => {
         seekVideo(pod,78);
     });
@@ -43,6 +45,29 @@ function init(){
         seekVideo(pod,187);
     });
 
+    document.getElementById("play_button").addEventListener("click", (e) => {
+        playVideo(pod);
+    });
+
+    document.getElementById("pause_button").addEventListener("click", (e) => {
+        pauseVideo(pod);
+    });
+
+    document.getElementById("mute").addEventListener("click", (e) => {
+        muteVid(pod);
+    });
+
+    document.getElementById("unmute").addEventListener("click", (e) => {
+        unmuteVid(pod);
+    });
+
+    document.getElementById("begin").addEventListener("click", (e) => {
+        seekVideo(pod, 0);
+    });
+
+    document.getElementById("end").addEventListener("click", (e) => {
+        seekVideo(pod, 304);
+    });
 
 }
 
